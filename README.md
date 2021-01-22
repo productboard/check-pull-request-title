@@ -15,7 +15,7 @@ This is intended to be used with the [Autosquash](https://github.com/tibdex/auto
 # Example Workflow
 
 ```yml
-name: 'Jira Check'
+name: "Jira Check"
 on:
   pull_request:
     types:
@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v1
-      - uses: dylanvann/check-pull-request-title@v1
+      - uses: productboard/check-pull-request-title@main
         with:
           # Match pull request titles in the form UI-1234 - Message.
           pattern: '^UI-\d* - '
